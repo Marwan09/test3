@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&family=Libre+Baskerville&family=Lora:ital,wght@0,500;0,600;0,700;1,600&family=Merriweather:wght@400;700;900&family=Roboto+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Tajawal:wght@500&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marwan</title>
+</head>
+
+<body>
+  
+<div class="container py-5">
+
+    <!-- New recipe -->
+    <div class=" col-12 mt-5">
+  
+      <div class="row">
+          <div class="col-12">
+              <button type="button" class="btn btn-primary newRecipe" data-bs-toggle="modal" data-bs-target="#addRecipeForm"> Add  New  Recipe <i class="bi bi-plus-square-dotted"></i>
+              </button>
+          </div>
+      </div>
+  </div>
+
+  <!--  -->
+
+<!-- Modal -->
+<div class="modal fade" id="addRecipeForm"  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipeTitle">Add  New  Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">close</button>
+      </div>
+      <div class="modal-body">
+        <div class="col text-center>
+                  <!-- new recipe content -->
+                  <!-- remember disable ID -->
+                   <label for="id">ID</label>
+                    <input type="text" id="id" class="form-control">
+                    <label for="id">Title</label>
+                    <input type="text" id="title" class="form-control">
+                    <label for="cook_time"> Cook Time</label>
+                    <input type="text" id="cook_time" class="form-control">
+                    <label for="steps">steps</label>
+                    <!-- <input type="text" id="steps" class="form-control" placeholder="steps"> -->
+                    <textarea class="form-control" id="steps" rows="3" placeholder="steps" ></textarea>
+                    <!-- end od new content -->
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="saveRecipeBtn">Save Recipe </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--  -->
+   <!-- end of New recipe -->
+    <!--  recipe show -->
+
+  <h1 class="text-center">Recipe App</h1>
+  <!--  -->
+  <div class="row row-cols-1 row-cols-md-3 g-4" id="cards">
+    
+  </div>
+  <!--  end of recipe show -->
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
